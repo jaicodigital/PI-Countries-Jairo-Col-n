@@ -1,0 +1,25 @@
+.containerGeneral {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  padding: 120.9px;
+  background-image: url("https://www.wallpapertip.com/wmimgs/84-840188_backgrounds-tivo-black-background-and-some-ppt-template.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cardActivities {
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  border-radius: 15px;
+  width: 99%;
+  background-color: rgb(251, 255, 0);
+  font-family: "Bebas Neue", cursive;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+/* .cardActivities:hover {
+  background-color: #050646f3;
+  color: white;
+} */

@@ -1,0 +1,28 @@
+.paginacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 300px;
+}
+
+.button {
+  width: 45px;
+  height: 20px;
+  font-family: "Bebas Neue", cursive;
+  font-size: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: rgb(255, 251, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.cardContainer {
+  width: 250px;
+  border: 0px solid transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  color: black;
+  background-color: rgb(255, 251, 0);
+  box-shadow: 0 1px 15px 5px rgb(0 0 0 / 12%);
+  margin: 15px 0px 15px 0px;
+  transition: 100ms;
+  font-size: 15px;
+  display: -moz-deck;
+  display: flex;
+}
+
+.countryImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: flex;
+}
+
+.cardContainer:hover {
+  transform: scale(1.1);
+}
+
+.colorCapiConti {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  color: rgb(56, 53, 53);
+  margin: 1px;
+}
+
+.colorName {
+  font-family: "Bebas Neue", cursive;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,144 @@
+.body {
+  background-image: url("https://c.tenor.com/eaCVrwyJZK8AAAAd/galaxy-space.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+}
+
+.Paginacion {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 50% 50%;
+  padding-left: 1%;
+  text-decoration: none;
+}
+
+.sinLinea {
+  text-decoration: none;
+}
+
+.mundoIcono {
+  display: grid;
+  padding: 1%;
+  width: 2rem;
+  height: 5%;
+}
+
+.loading {
+  display: center;
+  place-content: center;
+  padding-left: 150%;
+  height: 100%;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  height: 100%;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+.listItem {
+  margin: 0;
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+}
+
+.listItem a {
+  font-family: "Bebas Neue", cursive;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: rgb(2, 0, 0);
+  height: 60%;
+  padding: 16px 10px;
+  margin-top: 20px;
+  border-bottom: 4px solid transparent;
+  border-radius: 15px;
+}
+
+.listItem a:hover,
+.listItem a.active {
+  transform: translateY(-2px);
+  color: rgb(250, 250, 250);
+}
+
+.filtroPoblacion {
+  margin: 30px;
+  padding: 5px 15px;
+  text-align: center;
+  transition: 0.3s;
+  background-color: #fffffff3;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(189, 189, 189);
+  border: 0.01px black thin;
+  border-radius: 10px;
+  display: center;
+  outline: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 10;
+  letter-spacing: 2px;
+}
+
+.filtroPoblacion:hover {
+  background-color: rgb(255, 251, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.filtroContinente {
+  margin: 30px;
+  padding: 5px 15px;
+  text-align: center;
+  transition: 0.3s;
+  background-color: #fffffff3;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(189, 189, 189);
+  border: 0.01px black thin;
+  border-radius: 10px;
+  display: center;
+  outline: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 10;
+  letter-spacing: 2px;
+}
+
+.filtroContinente:hover {
+  background-color: rgb(255, 251, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.filtroAlfabetico {
+  margin: 30px;
+  padding: 5px 15px;
+  text-align: center;
+  transition: 0.3s;
+  background-color: #fffffff3;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgb(189, 189, 189);
+  border: 0.01px black thin;
+  border-radius: 10px;
+  display: center;
+  outline: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20;
+  letter-spacing: 2px;
+}
+
+.filtroAlfabetico:hover {
+  background-color: rgb(255, 251, 0);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");

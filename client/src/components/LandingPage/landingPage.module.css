@@ -1,0 +1,88 @@
+.Body {
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background-image: url("landing3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.H1 {
+  font-size: 1rem;
+  position: relative;
+  font-family: "Bebas Neue", cursive;
+  font-size: 70px;
+  color: rgb(255, 251, 0);
+  /* -webkit-text-stroke: 0.89px rgb(2, 8, 34); */
+  letter-spacing: 5px;
+  width: max-content;
+  opacity: 100;
+  transform: translateY(18rem);
+  animation: fadeInUp 1s ease 1s forwards;
+}
+
+.H1::before,
+.H1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Titulo {
+  padding-right: 800px;
+}
+
+.container {
+  width: 100px;
+  height: 100%;
+  padding-right: 100px;
+  padding-left: 160px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.Boton {
+  width: 140px;
+  height: 45px;
+  font-size: larger;
+  font-family: "Bebas Neue", cursive;
+  /* text-transform: uppercase; */
+  letter-spacing: 5px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  outline: none;
+  transform: translateY(-32rem);
+  /* transform: translateX(-25rem); */
+  animation: fadeInUp 1.5s ease 0.7001s forwards;
+  opacity: 20;
+}
+
+.Boton:hover {
+  background-color: #e5ff00;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.582);
+  color: rgb(0, 0, 0);
+  transform: translateY(10px);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
