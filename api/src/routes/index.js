@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const axios = require("axios");
-const { Activity, Country /*activity_country*/ } = require("../db");
+const { Activity, Country } = require("../db");
 const { Op } = require("sequelize");
 
 // Importar todos los routers;
