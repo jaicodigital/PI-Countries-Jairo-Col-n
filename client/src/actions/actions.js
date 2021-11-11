@@ -3,7 +3,7 @@ import axios from "axios";
 export function getCountries() {
   return async function (dispatch) {
     try {
-      var json = await axios.get("/countries");
+      var json = await axios.get(`/countries`);
       return dispatch({
         type: "GET_COUNTRIES",
         payload: json.data,
@@ -17,7 +17,7 @@ export function getCountries() {
 export function getActivities() {
   return async function (dispatch) {
     try {
-      var json = await axios.get("/activities");
+      var json = await axios.get(`/activities`);
       return dispatch({
         type: "GET_ACTIVITIES",
         payload: json.data,
@@ -45,7 +45,7 @@ export function getName(name) {
 export function postActivity(payload) {
   return async function (dispatch) {
     try {
-      const json = await axios.post("/activity", payload);
+      const json = await axios.post(`/activity`, payload);
       return dispatch({
         type: "POST_ACTIVITY",
         payload: json,
