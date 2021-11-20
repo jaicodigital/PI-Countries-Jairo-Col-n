@@ -22,9 +22,9 @@ export default function Home() {
 
   //Estados locales
   const [currentPage, setCurrentPage] = useState(1); //Página actual
-  const [countriesPerPage /*setCountriesPerPage*/] = useState(10); //Cantidad de países por página
-  const [, /*order*/ setOrder] = useState("");
-  const [, /*filterPopulation*/ setFilterPopulation] = useState("");
+  const [countriesPerPage,] = useState(10); //Cantidad de países por página
+  const [, setOrder] = useState("");
+  const [, setFilterPopulation] = useState("");
 
   //Ordenando paises por página
   const indexOfLastCountrie = currentPage * countriesPerPage; //10
@@ -130,6 +130,7 @@ export default function Home() {
                 </div>
               );
             })}
+
           <div>
             {currentCountries && currentCountries.length === 0 ? (
               <div>
@@ -143,6 +144,7 @@ export default function Home() {
               <div />
             )}
           </div>
+          
         </div>
         <Paginado
           countriesPerPage={countriesPerPage}
