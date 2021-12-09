@@ -34,7 +34,14 @@ const getInfoBd = async () => {
   return await Country.findAll({
     include: {
       model: Activity,
-      attributes: ["id", "name", "difficulty", "duration", "season", "createdInDb"],
+      attributes: [
+        "id",
+        "name",
+        "difficulty",
+        "duration",
+        "season",
+        "createdInDb",
+      ],
       through: {
         attributes: [],
       },
@@ -60,8 +67,8 @@ router.get("/countries", async (req, res) => {
     if (!name) {
       return res.send(countriesTotalesBD);
     } else {
-      const nameCount = 
-      name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+      const nameCount =
+        name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 
       let countriesName = await Country.findAll({
         where: {
@@ -81,7 +88,7 @@ router.get("/countries", async (req, res) => {
           through: { attributes: [] },
         },
       });
-      countriesName 
+      countriesName
         ? res.status(200).send(countriesName)
         : res
             .status(404)
@@ -117,29 +124,38 @@ router.get("/countries/:id", async (req, res) => {
 
 router.post("/activity", async (req, res) => {
   try {
-    const { name, difficulty, duration, season, createdInDb, countries } = req.body;
-      //validaciones
-    if (!name || name.length > 30 || !difficulty || Number.parseInt(difficulty) > 5 || Number.parseInt(difficulty) <= 0) {
-        res.status(400).send("Valores incorrectos o incompletos")
-        return
+    const { name, difficulty, duration, season, createdInDb, countries } =
+      req.body;
+    //validaciones
+    if (
+      !name ||
+      name.length > 30 ||
+      !difficulty ||
+      Number.parseInt(difficulty) > 5 ||
+      Number.parseInt(difficulty) <= 0
+    ) {
+      res.status(400).send("Valores incorrectos o incompletos");
+      return;
     }
     let activity = await Activity.findOne({
-      where: { name }
-  })
-  //si no existe la creo
-  if (!activity) {
+      where: { name },
+    });
+    //si no existe la creo
+    if (!activity) {
       activity = await Activity.create({
-          name, difficulty, duration, season, createdInDb
-      })
-  }
-  //busco los paises
-  const countriesDb = await Country.findAll(
-      {
-          where: { name: countries }
-      }
-  )
-  // uso la actividad encontrada o creada y le agrego los paises
-  activity.addCountries(countriesDb);
+        name,
+        difficulty,
+        duration,
+        season,
+        createdInDb,
+      });
+    }
+    //busco los paises
+    const countriesDb = await Country.findAll({
+      where: { name: countries },
+    });
+    // uso la actividad encontrada o creada y le agrego los paises
+    activity.addCountries(countriesDb);
 
     return res.status(200).send("Activity created");
   } catch (e) {
