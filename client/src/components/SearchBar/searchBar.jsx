@@ -7,7 +7,6 @@ import {
   getCountries,
 } from "../../actions/actions";
 import j from "../SearchBar/searchBar.module.css";
-// import About from "../About/About";
 
 export default function SearchBar() {
   const dispatch = useDispatch();
@@ -68,17 +67,17 @@ export default function SearchBar() {
             </NavLink>
             <NavLink to="/activity">Crea una actividad</NavLink>
             <NavLink to="/about">About</NavLink>
-            <div className={j.mundoLanding}>
+          </li>
+        <li className={j.listItem2}>
               <NavLink exact to="/">
                 <img
                   src="https://i.pinimg.com/originals/b9/93/02/b99302e5e4d36d7a4af5bf6f17583008.png"
-                  width="70"
-                  height="70"
-                  alt=""
+                  width="60"
+                  height="60"
+                  alt="mundo"
                 />
               </NavLink>
-            </div>
-          </li>
+            </li>
         </ul>
       </nav>
       <div onSubmit={handleSubmit} className={j.containerSearch}>

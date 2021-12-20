@@ -19,6 +19,7 @@
   border-radius: 40px;
   cursor: pointer;
   outline: none;
+  margin-top: 7%;
 }
 
 .button:hover {
