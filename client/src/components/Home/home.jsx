@@ -22,7 +22,7 @@ export default function Home() {
 
   //Estados locales
   const [currentPage, setCurrentPage] = useState(1); //Página actual
-  const [countriesPerPage,] = useState(10); //Cantidad de países por página
+  const [countriesPerPage] = useState(10); //Cantidad de países por página
   const [, setOrder] = useState("");
   const [, setFilterPopulation] = useState("");
 
@@ -144,7 +144,6 @@ export default function Home() {
               <div />
             )}
           </div>
-          
         </div>
         <Paginado
           countriesPerPage={countriesPerPage}

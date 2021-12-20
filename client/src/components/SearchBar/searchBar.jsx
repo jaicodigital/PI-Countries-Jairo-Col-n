@@ -7,6 +7,7 @@ import {
   getCountries,
 } from "../../actions/actions";
 import j from "../SearchBar/searchBar.module.css";
+// import About from "../About/About";
 
 export default function SearchBar() {
   const dispatch = useDispatch();
@@ -66,6 +67,7 @@ export default function SearchBar() {
               Inicio
             </NavLink>
             <NavLink to="/activity">Crea una actividad</NavLink>
+            <NavLink to="/about">About</NavLink>
             <div className={j.mundoLanding}>
               <NavLink exact to="/">
                 <img
