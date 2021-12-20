@@ -10,7 +10,7 @@
 .Paginacion {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 45% 45%;
+  grid-template-rows: 50% 50%;
   position: relative;
   margin-top: -1%;
   padding-left: 1%;
