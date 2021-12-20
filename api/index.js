@@ -24,12 +24,12 @@ conn.sync({ force: true }).then(async () => {
     });
     await Country.bulkCreate(apiInfo);
     console.log("Conectado a la BD");
-    // console.log("Api info", apiInfo)
+  
   } catch (error) {
     console.log(error);
   }
-  server.listen(process.env.PORT || 3001, () => {
-    console.log("%s listening at 3001"); // eslint-disable-line no-console
+  server.listen(process.env.PORT, () => {
+    console.log("%s listening at 3001");
   });
 });
 
