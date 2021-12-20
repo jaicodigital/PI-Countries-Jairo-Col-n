@@ -18,6 +18,28 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.buttonVolverCrearAbout {
+  right: -3%;
+  border: 5px;
+  margin-bottom: 5%;
+  margin-right: 30px;
+  position: relative;
+  border-radius: 7px;
+  background-color: rgba(255, 206, 46, 0.932);
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  transition: 400ms;
+  cursor: pointer;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.buttonVolverCrearAbout:hover {
+  background-color: #03031df3;
+  color: white;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */

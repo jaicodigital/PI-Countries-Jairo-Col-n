@@ -39,6 +39,7 @@ function AboutCard() {
           <p style={{ marginBlockEnd: 0, color: "rgb(155 126 172)" }}>
             "¡Esfuérzate por construir cosas que marquen la diferencia!"{" "}
           </p>
+          <br/>
           <footer className="blockquote-footer">Jairo Colón</footer>
         </blockquote>
       </Card.Body>
