@@ -28,7 +28,7 @@ conn.sync({ force: true }).then(async () => {
   } catch (error) {
     console.log(error);
   }
-  server.listen(process.env.PORT, () => {
+  server.listen(process.env.PORT || 3001, () => {
     console.log("%s listening at 3001");
   });
 });
