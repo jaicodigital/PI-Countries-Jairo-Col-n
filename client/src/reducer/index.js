@@ -38,6 +38,9 @@ export default function rootReducer(state = initialState, action) {
             }
           }
         }
+        return (
+          c
+        )
       });
       return {
         ...state,
