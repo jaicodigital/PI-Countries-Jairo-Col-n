@@ -5,7 +5,7 @@ const { Country } = require("./src/db.js");
 // const { DB_URL } = process.env;
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(async () => {
+conn.sync({ force: false }).then(async () => {
   try {
     const countriesAllApi = await axios.get("https://restcountries.com/v3/all");
     const apiInfo = await countriesAllApi.data.map((e) => {
