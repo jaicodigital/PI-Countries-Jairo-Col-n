@@ -3,10 +3,8 @@
   <a href="https://pi-countries-jairo-col-n.vercel.app/" target="_blank">pi-countries-jairo-col-n.vercel.app</a>
 </h2>
  
- <div className={j.Titulo}>
-        <h1 className={j.H1}>Países del mundo</h1>
-      </div>
+ <h1 align="center">Países del mundo</h1>
 
-<p align="left">
-  <img height="200" src="./countries.png" />
+<p align="center">
+  <img height="400" src="./countries.png" />
 </p>
