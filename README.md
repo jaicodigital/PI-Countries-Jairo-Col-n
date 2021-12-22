@@ -4,7 +4,7 @@
 </h2>
 
 <p align="center">
-  <img height="600" src="./countries1.png" />
+  <img height="500" src="./countries1.png" />
 </p>
 
 <h3 align="left">El proyecto consiste en una SPA que realicé con:</h3>
