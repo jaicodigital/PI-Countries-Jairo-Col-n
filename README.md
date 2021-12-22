@@ -8,3 +8,10 @@
 <p align="center">
   <img height="400" src="./countries.png" />
 </p>
+
+<P align="center">
+El proyecto consiste en una SPA que realicé con:
+🔸DATABASE: Sequelize y PostgreSQL, que almacena los datos de la API REST COUNTRIES y las actividades que se pueden crear en la página.
+🔸BACK-END: Realizado con Node.js y Express
+🔸FRONT-END: Hecho con React.js, Redux.js y Css puro.
+</P>
