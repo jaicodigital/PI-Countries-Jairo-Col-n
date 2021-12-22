@@ -33,12 +33,10 @@ export default function rootReducer(state = initialState, action) {
       const filterActivity = countryActivity.filter((c) => {
         if (c.activities.length > 0) {
           for (let i = 0; i < c.activities.length; i++) {
-            if (c.activities[i].name === action.payload) {
-              return c;
-            }
+            if (c.activities[i].name === action.payload) return c;
           }
         }
-        return c;
+        // return action.payload;
       });
       return {
         ...state,
