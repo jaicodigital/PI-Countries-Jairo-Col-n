@@ -10,8 +10,8 @@
 </p>
 
 <P align="center">
-El proyecto consiste en una SPA que realicé con:
-🔸DATABASE: Sequelize y PostgreSQL, que almacena los datos de la API REST COUNTRIES y las actividades que se pueden crear en la página.
-🔸BACK-END: Realizado con Node.js y Express
+El proyecto consiste en una SPA que realicé con:<br/>
+🔸DATABASE: Sequelize y PostgreSQL, que almacena los datos de la API REST COUNTRIES y las actividades que se pueden crear en la página.<br/>
+🔸BACK-END: Realizado con Node.js y Express<br/>
 🔸FRONT-END: Hecho con React.js, Redux.js y Css puro.
 </P>
