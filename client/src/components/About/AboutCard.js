@@ -12,7 +12,7 @@ function AboutCard() {
             soy de <span className="purple"> Cartagena - Colombia</span>
             <br />
             radicado en la ciudad de Bogotá. Soy un joven curioso que está en
-            constante busqueda de nuevos aprendizajes.
+            constante búsqueda de nuevos aprendizajes.
             <br />
             <br />
             Aparte de la codificación, algunas otras actividades que me gusta
